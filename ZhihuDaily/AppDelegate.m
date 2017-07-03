@@ -25,6 +25,7 @@
 
 @implementation AppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [DDLog addLogger:[DDASLLogger sharedInstance]];
@@ -50,6 +51,7 @@
     [_reachability startNotifier];
 }
 
+// 设置界面
 - (void)configureRootVC{
     LeftMenuViewController *leftVC = [LeftMenuViewController new];
     HomePageViewController *rightVC = [HomePageViewController new];
